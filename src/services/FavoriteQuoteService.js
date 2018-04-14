@@ -28,6 +28,7 @@ export const fetchFavoriteQuotes = () => {
         firebase
             .fetchFavoriteQuotes()
             .then(data => {
+                console.log('hello fetchFavoriteQuotes');
                 if (data === null || data.val() === null) {
                     return resolve([]);
                 }

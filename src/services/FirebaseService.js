@@ -5,7 +5,7 @@ import * as firebase from 'firebase';
 
 // INITIALIZATION
 
-const QUOTES_COLLECTION = 'favorite_quotes';
+const QUOTES_COLLECTION = 'tips/';
 
 const config = {
     apiKey: process.env.FIREBASE_API_KEY,
@@ -15,6 +15,8 @@ const config = {
     storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
     messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
 };
+
+console.log(config);
 
 firebase.initializeApp(config);
 
