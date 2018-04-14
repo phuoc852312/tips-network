@@ -4,7 +4,7 @@
 }
 
 .quote-display-author {
-    color: $primary-color;
+    color: $grey-shade-8;
     display: inline-block;
     font-size: 14px;
     font-weight: bolder;
@@ -24,20 +24,25 @@
 }
 
 .quote-display-quotes {
-    color: $primary-color;
+    color: $grey-shade-8;
     display: inline-block;
     vertical-align: top;
 }
 
 .quote-display-refresh {
     cursor: pointer;
-    color: $secondary-color;
+    color: $grey-shade-8;
     margin: 10px;
     margin-left: 20px;
 }
 
 .quote-display-favorite {
     cursor: pointer;
-    color: $secondary-color;
+    color: $grey-shade-8;
     margin: 10px;    
+}
+
+.button-icon {
+    cursor: pointer;
+    color: $grey-shade-8;
 }

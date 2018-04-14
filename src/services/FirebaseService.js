@@ -5,7 +5,8 @@ import * as firebase from 'firebase';
 
 // INITIALIZATION
 
-const quotes_COLLECTION = 'tips/';
+const TIPS_COLLECTION = 'tips/';
+const CATEGORIES_COLLECTION = 'categories/-LA4Hkx9O3uBJaU3EZcf/';
 
 const config = {
     apiKey: process.env.FIREBASE_API_KEY,
@@ -16,7 +17,7 @@ const config = {
     messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
 };
 
-// console.log(config);
+console.log(config);
 
 firebase.initializeApp(config);
 
@@ -24,17 +25,21 @@ firebase.initializeApp(config);
 // COMMANDS
 
 export const addToFavoriteQuotes = quote => {
-    return firebase.database().ref(quotes_COLLECTION).push(quote);
+    return firebase.database().ref(TIPS_COLLECTION).push(quote);
 };
 
 
 export const removeFavoriteQuote = id => {
-    return firebase.database().ref(`${quotes_COLLECTION}/${id}`).remove();
+    return firebase.database().ref(`${TIPS_COLLECTION}/${id}`).remove();
 };
 
 
 // QUERIES
 
 export const fetchFavoriteQuotes = () => {
-    return firebase.database().ref(quotes_COLLECTION).once('value');
+    return firebase.database().ref(TIPS_COLLECTION).once('value');
+};
+
+export const fetchTopics = () => {
+    return firebase.database().ref(CATEGORIES_COLLECTION).once('value');
 };
