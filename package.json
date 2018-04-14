@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-quotlify",
+  "name": "tips-network",
   "version": "1.0.0",
-  "description": "A quote browser and manager that allows one to search famous quotes and save them to a data store",
+  "description": "A tips network that help you save your gold time already here",
   "main": "index.js",
   "scripts": {
     "build": "webpack -d",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drminnaar/react-redux-quotlify.git"
+    "url": "git+https://github.com/phuoc852312/tips-network"
   },
   "keywords": [],
   "author": "",

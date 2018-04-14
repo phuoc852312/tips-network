@@ -19,9 +19,9 @@ export const AppRouter = () => (
             <Header />
             <nav className='menu'>
                 <ul>
-                    <li><NavLink to='/' activeClassName='menu selected' exact={true}>QOD</NavLink></li>
-                    <li><NavLink to='/search' activeClassName='menu selected'>SEARCH</NavLink></li>
-                    <li><NavLink to='/favourites' activeClassName='menu selected'>FAV</NavLink></li>
+                    <li><NavLink to='/' activeClassName='menu selected' exact={true}>Made for you</NavLink></li>
+                    <li><NavLink to='/search' activeClassName='menu selected'>Find others</NavLink></li>
+                    <li><NavLink to='/favourites' activeClassName='menu selected'>Your Favourites</NavLink></li>
                 </ul>
             </nav>
             <Switch>
