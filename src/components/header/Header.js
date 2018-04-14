@@ -8,7 +8,7 @@ import React from 'react';
 export const Header = () => (
     <div className='header'>
         <div className='brand'>
-            Tips Network            
+            tips network            
         </div>
     </div>
 );

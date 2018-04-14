@@ -42,15 +42,15 @@ class SearchBar extends Component {
     render() {
         return (
             <form className="animated fadeIn" onSubmit={this.onSubmitHandler}>
-                <div className="input-group mb-3 col-md-6 mx-auto">
+                <div className="input-group mb-3 col-md-6 mx-auto search-box">
                     <input type="text"
                         className="form-control"
-                        placeholder="quote text filter"
+                        placeholder="start typing"
                         value={this.state.filter}
                         onChange={this.onFilterChangeHandler} />
 
                     <div className="input-group-append">
-                        <button className="btn btn-outline-info" type="submit">SEARCH</button>
+                        <button className="btn btn-outline-info" type="submit">Search</button>
                     </div>
                 </div>
             </form>

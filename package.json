@@ -1,7 +1,7 @@
 {
   "name": "tips-network",
   "version": "1.0.0",
-  "description": "A tips network that help you save your gold time already here",
+  "description": "tips network that help you save your gold time already here",
   "main": "index.js",
   "scripts": {
     "build": "webpack -d",

@@ -2,8 +2,12 @@ html {
     font-family: $font-family;
 }
 
-a:hover, a:visited, a:link, a:active
-{
+body {
+    background-image: linear-gradient(#2d2f44,#040406 85%);
+    min-height: 1000px;
+}
+
+a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
 
