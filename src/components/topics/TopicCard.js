@@ -35,7 +35,7 @@ const TopicCard = (props) => {
                             style={{ cursor: 'pointer' }}
                             onClick={() => props.pickTopic(props.topic)}>
                             <i className="fa fa-circle fa-stack-2x button-icon"></i>
-                            <i className={!topic.checked ? 'fa fas fa-check fa-stack-1x text-dark' : 'fa fas fa-times fa-stack-1x text-dark'}></i>
+                            <i className={topic.checked ? 'fa fas fa-check fa-stack-1x text-dark' : 'fa fas fa-times fa-stack-1x text-dark'}></i>
                         </span>
                     </div>
                 </div>
