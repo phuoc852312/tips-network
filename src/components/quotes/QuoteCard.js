@@ -12,7 +12,7 @@ import { addToFavoriteQuotes } from '../state/actions/favoriteQuoteActions';
 
 // CONFIGURE COLORS
 
-let bgColors = ['bg-light', 'bg-secondary'];
+let bgColors = ['bg-light', 'bg-secondary bg-brand'];
 let colors = ['text-dark', 'text-light'];
 
 
@@ -38,7 +38,7 @@ const QuoteCard = (props) => {
                                 style={{ cursor: 'pointer' }}
                                 onClick={() => props.addToFavoriteQuotes(quote)}>
                                 <i className="fa fa-circle fa-stack-2x button-icon"></i>
-                                <i className="fa fa-heart fa-stack-1x fa-inverse"></i>
+                                <i className="fa fa-heart fa-stack-1x text-dark"></i>
                             </span>
                         </div>
                     </div>
