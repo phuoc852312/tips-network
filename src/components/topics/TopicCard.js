@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 
 // IMPORT PROJECT REFERENCES
 
-import { addToFavoriteTopics } from '../state/actions/favoriteQuoteActions';
+import { pickTopic } from '../state/actions/topicActions';
 
 
 // CONFIGURE COLORS
@@ -32,7 +32,8 @@ const TopicCard = (props) => {
                     <div className="card-body">
                         <p className="card-text">{topic.name}</p>
                         <span className="fa-stack fa-lg float-right"
-                            style={{ cursor: 'pointer' }}>
+                            style={{ cursor: 'pointer' }}
+                            onClick={() => props.pickTopic(props.topic)}>
                             <i className="fa fa-circle fa-stack-2x button-icon"></i>
                             <i className={!topic.checked ? 'fa fas fa-check fa-stack-1x text-dark' : 'fa fas fa-times fa-stack-1x text-dark'}></i>
                         </span>
@@ -57,14 +58,14 @@ const TopicCard = (props) => {
 TopicCard.propTypes = {
     topic: PropTypes.object,
     index: PropTypes.number,
-    addToFavoriteTopics: PropTypes.func
+    pickTopic: PropTypes.func
 };
 
 
 // CONFIGURE REACT REDUX
 
 const mapDispatchToProps = dispatch => {
-    return bindActionCreators({ addToFavoriteTopics }, dispatch);
+    return bindActionCreators({ pickTopic }, dispatch);
 };
 
 const hoc = connect(null, mapDispatchToProps)(TopicCard);

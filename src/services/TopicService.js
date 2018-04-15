@@ -52,14 +52,14 @@ export const fetchTopics = () => {
 };
 
 
-// export const removeFavoriteQuote = id => {
-//     return new Promise((resolve, reject) => {
-//         firebase
-//             .removeFavoriteQuote(id)
-//             .then(() => resolve())
-//             .catch(error => {
-//                 console.log(error);
-//                 return reject(error);
-//             });
-//     });
-// };
+export const pickTopic = (topic) => {
+    return new Promise((resolve, reject) => {
+        firebase
+            .pickTopic(topic)
+            .then(() => resolve())
+            .catch(error => {
+                console.log(error);
+                return reject(error);
+            });
+    });
+};

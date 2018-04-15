@@ -10,6 +10,7 @@ import { FetchFavoriteQuotesReducer} from './FetchFavoriteQuotesReducer';
 import { RemoveFavoriteQuoteReducer} from './RemoveFavoriteQuoteReducer';
 import { FindQuotesReducer } from './FindQuotesReducer';
 import { FetchTopicsReducer } from './FetchTopicsReducer';
+import { PickTopicReducer } from './PickTopicReducer';
 
 
 // EXPORT REDUCER
@@ -20,5 +21,6 @@ export const AppReducer = combineReducers({
     favoriteQuoteRemoval: RemoveFavoriteQuoteReducer,
     favoriteQuotes: FetchFavoriteQuotesReducer,
     quotes: FindQuotesReducer,
-    fetchTopics: FetchTopicsReducer
+    fetchTopics: FetchTopicsReducer,
+    pickTopic: PickTopicReducer
 });

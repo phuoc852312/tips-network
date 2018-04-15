@@ -43,3 +43,7 @@ export const fetchFavoriteQuotes = () => {
 export const fetchTopics = () => {
     return firebase.database().ref(CATEGORIES_COLLECTION).once('value');
 };
+
+export const pickTopic = topic => {
+    return firebase.database().ref(`${CATEGORIES_COLLECTION}/${topic.id}`).set(Object.assign(topic, {checked: !topic.checked}));
+};

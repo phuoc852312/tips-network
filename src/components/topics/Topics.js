@@ -70,12 +70,12 @@ Topics.propTypes = {
 
 const mapStateToProps = state => {
     const { topics, fetching } = state.fetchTopics;
-    // const { removing } = state.favoriteQuoteRemoval;
+    const { removing } = state.pickTopic;
     
     return {
         topics,
         fetching,
-        // removing,
+        removing,
     };
 };
 
