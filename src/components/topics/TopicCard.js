@@ -12,7 +12,7 @@ import { addToFavoriteTopics } from '../state/actions/favoriteQuoteActions';
 
 // CONFIGURE COLORS
 
-let bgColors = ['bg-light', 'bg-secondary'];
+let bgColors = ['bg-light', 'bg-secondary bg-brand'];
 let colors = ['text-dark', 'text-light'];
 
 
@@ -24,7 +24,6 @@ const TopicCard = (props) => {
     const className = `card mb-3 animated fadeIn ${bgColors[index]} ${colors[index]}`;
     const { topic } = props;
     const showTopics = topic.name !== 'No topic found';
-
     return (
         <div>
             {
@@ -32,6 +31,11 @@ const TopicCard = (props) => {
                 <div className={className} >
                     <div className="card-body">
                         <p className="card-text">{topic.name}</p>
+                        <span className="fa-stack fa-lg float-right"
+                            style={{ cursor: 'pointer' }}>
+                            <i className="fa fa-circle fa-stack-2x button-icon"></i>
+                            <i className={!topic.checked ? 'fa fas fa-check fa-stack-1x text-dark' : 'fa fas fa-times fa-stack-1x text-dark'}></i>
+                        </span>
                     </div>
                 </div>
             }

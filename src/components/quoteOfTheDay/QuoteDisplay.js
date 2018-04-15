@@ -31,14 +31,14 @@ const QuoteDisplay = (props) => (
                     style={{ cursor: 'pointer' }}
                     onClick={() => props.addToFavoriteQuotes(props.quote)}>
                     <i className="fa fa-circle fa-stack-2x button-icon"></i>
-                    <i className="fa fa-heart fa-stack-1x fa-inverse"></i>
+                    <i className="fa fa-heart fa-stack-1x text-dark"></i>
                 </span>
 
                 <span className="fa-stack fa-2x"
                     style={{ cursor: 'pointer' }}
                     onClick={props.fetchQuoteOfTheDay}>
                     <i className="fa fa-circle fa-stack-2x button-icon"></i>
-                    <i className="fa fa-refresh fa-stack-1x fa-inverse"></i>
+                    <i className="fa fa-refresh fa-stack-1x text-dark"></i>
                 </span>
             </div>
         }

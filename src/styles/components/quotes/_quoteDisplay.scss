@@ -4,7 +4,7 @@
 }
 
 .quote-display-author {
-    color: $grey-shade-8;
+    color: $grey-shade-1;
     display: inline-block;
     font-size: 14px;
     font-weight: bolder;
@@ -15,7 +15,7 @@
 }
 
 .quote-display-content {
-    color: rgb(104, 104, 104);
+    color: $grey-shade-1;
     font-size: 18px;
     font-weight: bolder;
     margin: 0 20px;
@@ -24,7 +24,7 @@
 }
 
 .quote-display-quotes {
-    color: $grey-shade-8;
+    color: $grey-shade-1;
     display: inline-block;
     vertical-align: top;
 }
@@ -44,5 +44,5 @@
 
 .button-icon {
     cursor: pointer;
-    color: $grey-shade-8;
+    color: $grey-shade-1;
 }

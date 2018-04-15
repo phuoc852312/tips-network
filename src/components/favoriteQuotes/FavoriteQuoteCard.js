@@ -12,7 +12,7 @@ import { removeFavoriteQuote } from '../state/actions/favoriteQuoteActions';
 
 // INITIALIZE COLORS
 
-let bgColors = ['bg-light', 'bg-secondary'];
+let bgColors = ['bg-light', 'bg-secondary bg-brand'];
 let colors = ['text-dark', 'text-light'];
 
 
@@ -34,7 +34,7 @@ const FavoriteQuoteCard = (props) => {
                             style={{ cursor: 'pointer' }}
                             onClick={() => props.removeFavoriteQuote(props.quote.id)}>
                             <i className="fa fa-circle fa-stack-2x button-icon"></i>
-                            <i className="fa fa-trash fa-stack-1x fa-inverse"></i>
+                            <i className="fa fa-trash fa-stack-1x text-dark"></i>
                         </span>
                     </div>
                 </div>

@@ -20,5 +20,5 @@ export const AppReducer = combineReducers({
     favoriteQuoteRemoval: RemoveFavoriteQuoteReducer,
     favoriteQuotes: FetchFavoriteQuotesReducer,
     quotes: FindQuotesReducer,
-    topics: FetchTopicsReducer
+    fetchTopics: FetchTopicsReducer
 });
